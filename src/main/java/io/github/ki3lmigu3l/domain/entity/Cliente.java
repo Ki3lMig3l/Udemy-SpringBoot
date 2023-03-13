@@ -13,8 +13,12 @@ public class Cliente {
     @Column(name = "Nome", length = 100)
     private String nome;
 
-    Cliente(){
+    public Cliente(){
 
+    }
+
+    public Cliente(String nome){
+        this.nome = nome;
     }
 
     public Integer getId() {
